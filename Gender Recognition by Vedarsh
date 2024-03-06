@@ -1,0 +1,48 @@
+# Male-Female Voice Recognition
+
+The goal of this project is to recognize whether a given voice belongs to a male or female. This recognition is based on the fundamental frequency of the voice. Generally, the fundamental frequency of a typical male voice ranges from 85 Hz to 180 Hz, while for a typical female voice, it ranges from 165 Hz to 255 Hz.
+
+## Method 1: Using Built-in Pitch Function
+
+This method involves using the `pitch` function, which is available in MATLAB. This function directly returns the fundamental frequency, `f0`, of any input audio file with a given sampling frequency `fs`. The fundamental frequency can then be compared with a threshold, such as 165 Hz, to determine whether the voice is male or female.
+
+### Limitation
+This method works only in MATLAB 2018.
+
+## Method 2: Workflow
+
+![Work Flow](img/1.JPG)
+
+This method involves the following steps:
+
+1. **Input**: Sample audio is taken as input with 3500 samples per audio channel.
+2. **Frequency Calculation**: The frequency of each frame is calculated using a custom function.
+3. **Persistent Storage**: Previous results are stored using the `Persistent` block for further processing.
+4. **Threshold Comparison**: Values are compared with threshold values to determine the gender.
+
+## Simulink Implementation
+
+![Simulink](img/2.JPG)
+
+In the Simulink implementation:
+- The `From Multimedia File` block is used to take the sample audio input.
+- The frequency of each frame is calculated using a custom MATLAB function.
+- Persistent storage is used to save previous results for further processing.
+- Values are compared with threshold values to determine the gender.
+
+## GUI Application
+
+To open the GUI application, navigate to the app designer and open `GUI/gui.mlapp`. Alternatively, you can install and use the MATLAB app by installing `Male_Female_Voice_Recognition.mlappinstall`.
+
+### Guide For the App
+
+- **Source Button**: Used to select the source file (by default, only .wav files are accepted).
+- **Go Button**: Initiates the selection process and displays the selected file name.
+- **Generate Graph**: Generates the FFT graph of the audio file.
+- **Calculate Button**: Calculates the frequency using the proposed algorithm and the built-in method, and determines the gender based on the frequency.
+
+Note: The accuracy of the gender prediction may be affected by the recording environment. Adjustments may be needed to improve accuracy.
+
+---
+
+This refined description provides a clear overview of the project, its methods, implementation, and GUI application, making it easier for readers to understand and follow.

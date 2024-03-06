@@ -1,0 +1,77 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="4073858166" file="C:\Users\MUKHE\Documents\MyProject\KoeWa.prj" location="C:\Users\MUKHE\Documents\MyProject" name="KoeWa" target="target.mlapps" target-name="Package App">
+    <param.appname>KoeWa</param.appname>
+    <param.authnamewatermark>Vedarsh</param.authnamewatermark>
+    <param.email>vedarsh.org@gmail.com</param.email>
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary>"KoeWa" is a modern MATLAB application designed for gender recognition in voice recordings. With its user-friendly interface and advanced algorithms, users can easily analyze audio files to determine whether the speaker is male or female.</param.summary>
+    <param.description>"KoeWa" is a cutting-edge MATLAB application developed for gender recognition in voice recordings. Utilizing sophisticated algorithms, the app analyzes the fundamental frequency of audio files to make accurate gender predictions. Its intuitive user interface allows for seamless navigation and efficient processing of audio data. Whether for research, analysis, or curiosity, "KoeWa" provides a powerful tool for identifying the gender of speakers in recorded audio.</param.description>
+    <param.screenshot>C:\Users\MUKHE\AppData\Local\Temp\tp41d0a3f2_ded6_4aa9_801f_faf988de606b.jpg</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>a37bf379-5e46-4180-8105-8af2b4a451c8</param.guid>
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\App.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\App.mlapp</file>
+      <file>${PROJECT_ROOT}\batwaveback.jpg</file>
+      <file>${PROJECT_ROOT}\freq.m</file>
+      <file>${PROJECT_ROOT}\Gender Recognition by Vedarsh</file>
+      <file>${PROJECT_ROOT}\KoeWa.prj</file>
+      <file>${PROJECT_ROOT}\LICENSE</file>
+      <file>${PROJECT_ROOT}\Male_Female_inbuilt_pitch.m</file>
+      <file>${PROJECT_ROOT}\Male_Female_Voice Recognizer.m</file>
+      <file>${PROJECT_ROOT}\mybutter.m</file>
+      <file>${PROJECT_ROOT}\myfilter.m</file>
+      <file>${PROJECT_ROOT}\README.md</file>
+      <file>${PROJECT_ROOT}\samples</file>
+      <file>${PROJECT_ROOT}\simulink</file>
+      <file>${PROJECT_ROOT}\upload_server.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\MUKHE\Documents" name="MyProject" optional="false">C:\Users\MUKHE\Documents\MyProject</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2023b</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
